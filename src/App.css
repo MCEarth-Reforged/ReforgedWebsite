@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
   overflow-x: hidden;
   min-height: 100vh;
@@ -24,7 +24,7 @@ body::before {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  opacity: 0.2;
+  opacity: 0.3;
   z-index: -1;
 }
 
@@ -33,10 +33,10 @@ body::before {
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(20px) saturate(180%);
   -webkit-backdrop-filter: blur(20px) saturate(180%);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   z-index: 1000;
   padding: 20px 0;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
@@ -62,38 +62,6 @@ body::before {
   transform: scale(1.05);
 }
 
-/* Theme Toggle */
-.theme-toggle {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  background: rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10px) saturate(180%);
-  -webkit-backdrop-filter: blur(10px) saturate(180%);
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 50px;
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-}
-
-.theme-toggle:hover {
-  background: rgba(0, 0, 0, 0.15);
-  transform: scale(1.1);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
-}
-
-.theme-toggle i {
-  font-size: 20px;
-  color: white;
-  transition: all 0.3s ease;
-}
-
 /* Hero Section */
 .hero {
   position: relative;
@@ -105,18 +73,18 @@ body::before {
 
 /* Frosted Glass Card */
 .frosted-glass-card {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.15) 100%);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
   backdrop-filter: blur(30px) saturate(200%) brightness(1.2);
   -webkit-backdrop-filter: blur(30px) saturate(200%) brightness(1.2);
   border-radius: 24px;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   padding: 50px 70px;
   max-width: 650px;
   text-align: center;
   box-shadow: 
-    0 8px 32px rgba(0, 0, 0, 0.1),
-    0 2px 8px rgba(0, 0, 0, 0.05),
-    inset 0 1px 0 rgba(255, 255, 255, 0.4);
+    0 8px 32px rgba(31, 38, 135, 0.37),
+    0 2px 8px rgba(31, 38, 135, 0.22),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
   position: relative;
   overflow: hidden;
 }
@@ -180,11 +148,11 @@ body::before {
 /* Progress Section */
 .progress-section {
   padding: 100px 20px;
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(25px) saturate(150%);
   -webkit-backdrop-filter: blur(25px) saturate(150%);
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
   position: relative;
 }
 
@@ -195,7 +163,7 @@ body::before {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, rgba(168, 237, 234, 0.1) 0%, rgba(254, 214, 227, 0.1) 100%);
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
   z-index: -1;
 }
 
@@ -211,12 +179,17 @@ body::before {
   font-size: 42px;
   font-weight: 700;
   margin-bottom: 50px;
-  background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   background-clip: text;
-  color: transparent;
-  text-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
+  color: white;
+  text-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+  position: relative;
+  z-index: 2;
+  padding: 10px 20px;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .progress-list {
@@ -233,26 +206,26 @@ body::before {
   font-size: 18px;
   font-weight: 500;
   padding: 20px 24px;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.2) 100%);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0.08) 100%);
   backdrop-filter: blur(15px) saturate(180%);
   -webkit-backdrop-filter: blur(15px) saturate(180%);
   border-radius: 16px;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 
-    0 4px 20px rgba(0, 0, 0, 0.1),
-    0 2px 8px rgba(0, 0, 0, 0.05),
-    inset 0 1px 0 rgba(255, 255, 255, 0.4);
+    0 4px 20px rgba(102, 126, 234, 0.15),
+    0 2px 8px rgba(102, 126, 234, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.25);
 }
 
 .progress-item:hover {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.3) 100%);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.18) 0%, rgba(255, 255, 255, 0.12) 100%);
   transform: translateY(-4px) scale(1.02);
-  border-color: rgba(0, 0, 0, 0.3);
+  border-color: rgba(255, 255, 255, 0.3);
   box-shadow: 
-    0 8px 30px rgba(0, 0, 0, 0.15),
-    0 4px 12px rgba(0, 0, 0, 0.1),
-    inset 0 1px 0 rgba(255, 255, 255, 0.5);
+    0 8px 30px rgba(102, 126, 234, 0.25),
+    0 4px 12px rgba(102, 126, 234, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.35);
 }
 
 .checkmark {
@@ -308,145 +281,4 @@ body::before {
     padding: 16px 20px;
     gap: 15px;
   }
-  
-  .theme-toggle {
-    top: 15px;
-    right: 15px;
-    width: 45px;
-    height: 45px;
-  }
-}
-
-/* Light Theme Styles */
-body.light-theme {
-  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
-}
-
-body.light-theme::before {
-  opacity: 0.2;
-}
-
-body.light-theme .header {
-  background: rgba(255, 255, 255, 0.25);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-body.light-theme .theme-toggle {
-  background: rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-}
-
-body.light-theme .theme-toggle:hover {
-  background: rgba(0, 0, 0, 0.15);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
-}
-
-body.light-theme .frosted-glass-card {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.15) 100%);
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  box-shadow: 
-    0 8px 32px rgba(0, 0, 0, 0.1),
-    0 2px 8px rgba(0, 0, 0, 0.05),
-    inset 0 1px 0 rgba(255, 255, 255, 0.4);
-}
-
-body.light-theme .progress-section {
-  background: rgba(255, 255, 255, 0.15);
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-body.light-theme .progress-section::before {
-  background: linear-gradient(135deg, rgba(168, 237, 234, 0.1) 0%, rgba(254, 214, 227, 0.1) 100%);
-}
-
-body.light-theme .progress-title {
-  background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
-  text-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
-}
-
-body.light-theme .progress-item {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.2) 100%);
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  box-shadow: 
-    0 4px 20px rgba(0, 0, 0, 0.1),
-    0 2px 8px rgba(0, 0, 0, 0.05),
-    inset 0 1px 0 rgba(255, 255, 255, 0.4);
-}
-
-body.light-theme .progress-item:hover {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.3) 100%);
-  border-color: rgba(0, 0, 0, 0.3);
-  box-shadow: 
-    0 8px 30px rgba(0, 0, 0, 0.15),
-    0 4px 12px rgba(0, 0, 0, 0.1),
-    inset 0 1px 0 rgba(255, 255, 255, 0.5);
-}
-
-/* Dark Theme Styles (Mirror of Light) */
-body:not(.light-theme) {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-}
-
-body:not(.light-theme)::before {
-  opacity: 0.2;
-}
-
-body:not(.light-theme) .header {
-  background: rgba(0, 0, 0, 0.25);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-body:not(.light-theme) .theme-toggle {
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 4px 16px rgba(255, 255, 255, 0.1);
-}
-
-body:not(.light-theme) .theme-toggle:hover {
-  background: rgba(255, 255, 255, 0.15);
-  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.2);
-}
-
-body:not(.light-theme) .frosted-glass-card {
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.15) 100%);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 
-    0 8px 32px rgba(255, 255, 255, 0.1),
-    0 2px 8px rgba(255, 255, 255, 0.05),
-    inset 0 1px 0 rgba(0, 0, 0, 0.4);
-}
-
-body:not(.light-theme) .progress-section {
-  background: rgba(0, 0, 0, 0.15);
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-body:not(.light-theme) .progress-section::before {
-  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
-}
-
-body:not(.light-theme) .progress-title {
-  background: linear-gradient(135deg, #ffffff 0%, #e0e0e0 100%);
-  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-}
-
-body:not(.light-theme) .progress-item {
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.2) 100%);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 
-    0 4px 20px rgba(255, 255, 255, 0.1),
-    0 2px 8px rgba(255, 255, 255, 0.05),
-    inset 0 1px 0 rgba(0, 0, 0, 0.4);
-}
-
-body:not(.light-theme) .progress-item:hover {
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.3) 100%);
-  border-color: rgba(255, 255, 255, 0.3);
-  box-shadow: 
-    0 8px 30px rgba(255, 255, 255, 0.15),
-    0 4px 12px rgba(255, 255, 255, 0.1),
-    inset 0 1px 0 rgba(0, 0, 0, 0.5);
 }

@@ -1,17 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './App.css';
 
 function App() {
-  const [isDarkTheme, setIsDarkTheme] = useState(false);
-
-  useEffect(() => {
-    document.body.classList.toggle('light-theme', !isDarkTheme);
-  }, [isDarkTheme]);
-
-  const toggleTheme = () => {
-    setIsDarkTheme(!isDarkTheme);
-  };
-
   return (
     <div className="App">
       {/* Header */}
@@ -22,9 +12,6 @@ function App() {
             alt="MCEarth Reforged" 
             className="logo"
           />
-          <button className="theme-toggle" onClick={toggleTheme}>
-            <i className={`bi ${isDarkTheme ? 'bi-sun' : 'bi-moon'}`}></i>
-          </button>
         </div>
       </header>
 
