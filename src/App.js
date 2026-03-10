@@ -14,10 +14,10 @@ function App() {
           />
           
           <nav className="nav-links">
-            <a href="#" className="nav-link">Games</a>
-            <a href="#" className="nav-link">Shop</a>
-            <a href="#" className="nav-link">News</a>
-            <a href="#" className="nav-link">Support</a>
+            <button className="nav-link">Games</button>
+            <button className="nav-link">Shop</button>
+            <button className="nav-link">News</button>
+            <button className="nav-link">Support</button>
             <button className="buy-now-btn">Buy Now</button>
           </nav>
           
