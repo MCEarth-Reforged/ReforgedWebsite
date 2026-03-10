@@ -8,7 +8,7 @@ function App() {
       <header className="header">
         <div className="header-container">
           <img 
-            src="/logo.png" 
+            src="%PUBLIC_URL%/logo.png" 
             alt="MCEarth Reforged" 
             className="logo"
           />
