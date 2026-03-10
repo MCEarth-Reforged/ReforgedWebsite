@@ -12,28 +12,18 @@ function App() {
             alt="MCEarth Reforged" 
             className="logo"
           />
-          
-          <nav className="nav-links">
-            <button className="nav-link">Games</button>
-            <button className="nav-link">Shop</button>
-            <button className="nav-link">News</button>
-            <button className="nav-link">Support</button>
-            <button className="buy-now-btn">Buy Now</button>
-          </nav>
-          
-          <div className="header-actions">
-            <i className="bi bi-search search-icon"></i>
-            <i className="bi bi-person-circle account-icon"></i>
-          </div>
         </div>
       </header>
 
-      {/* Hero Section */}
+      {/* Hero Section with Background */}
       <section className="hero">
-        <div className="hero-content">
-          <h1 className="hero-title">MCEarth: Reforged<br />is coming!</h1>
-          <p className="hero-subtitle">We're a community dedicated to recreating the Minecraft: Earth server infrastructure so that the community can continue to play even after the shutdown.</p>
-          <button className="watch-trailer-btn">Learn More</button>
+        {/* Frosted Glass Card */}
+        <div className="frosted-glass-card">
+          <div className="hero-content">
+            <h1 className="hero-title">MCEarth: Reforged</h1>
+            <p className="hero-subtitle">We're a community dedicated to recreating the Minecraft: Earth server infrastructure so that community can continue to play even after the shutdown.</p>
+            <button className="watch-trailer-btn">Learn More</button>
+          </div>
         </div>
       </section>
 
