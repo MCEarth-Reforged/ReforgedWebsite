@@ -45,7 +45,7 @@ function App() {
               <i className="bi bi-check-circle-fill checkmark"></i> Legal Notice
             </div>
             <div className="progress-item">
-              <i className="bi bi-arrow-repeat pending"></i> Shop (In Progress)
+              <i className="bi bi-circle-fill pending"></i> Shop (In Progress)
             </div>
             <div className="progress-item">
               <i className="bi bi-circle not-started"></i> Achievements

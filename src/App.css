@@ -187,7 +187,6 @@ body::before {
   text-shadow: 
     0 2px 4px rgba(0, 0, 0, 0.8),
     0 6px 18px rgba(102, 126, 234, 0.6);
-  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.8));
 }
 
 .progress-list {
