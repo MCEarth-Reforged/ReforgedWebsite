@@ -9,6 +9,10 @@ body {
   background-color: #0a0a0a;
   color: white;
   overflow-x: hidden;
+  background-image: url('./banner.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 /* Header Styles */
@@ -16,8 +20,10 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   z-index: 1000;
   padding: 15px 0;
 }
@@ -34,15 +40,13 @@ body {
 .logo {
   height: 40px;
   cursor: pointer;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
 }
 
 /* Hero Section */
 .hero {
   position: relative;
   height: 100vh;
-  background-image: url('./banner.png');
-  background-size: cover;
-  background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -50,15 +54,15 @@ body {
 
 /* Frosted Glass Card */
 .frosted-glass-card {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
   border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.15);
   padding: 40px 60px;
   max-width: 600px;
   text-align: center;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
 }
 
 .hero-content {
@@ -104,7 +108,11 @@ body {
 /* Progress Section */
 .progress-section {
   padding: 80px 20px;
-  background: linear-gradient(180deg, #1a1a1a 0%, #0a0a0a 100%);
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .progress-container {
@@ -118,6 +126,7 @@ body {
   font-weight: bold;
   margin-bottom: 40px;
   color: #4CAF50;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .progress-list {
@@ -133,14 +142,18 @@ body {
   gap: 15px;
   font-size: 18px;
   padding: 15px 20px;
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
   transition: all 0.3s ease;
 }
 
 .progress-item:hover {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.7);
   transform: translateX(5px);
+  border-color: rgba(255, 255, 255, 0.2);
 }
 
 .checkmark {
@@ -188,5 +201,6 @@ body {
   
   .progress-item {
     font-size: 16px;
+    padding: 12px 16px;
   }
 }
