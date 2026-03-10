@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import banner from './banner.png';
 
 function App() {
   return (
@@ -8,7 +9,7 @@ function App() {
       <header className="header">
         <div className="header-container">
           <img 
-            src="/logo.png" 
+            src={process.env.PUBLIC_URL + '/logo.png'} 
             alt="MCEarth Reforged" 
             className="logo"
           />
