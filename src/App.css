@@ -181,15 +181,13 @@ body::before {
   margin-bottom: 50px;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   background-clip: text;
-  color: white;
-  text-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
-  position: relative;
-  z-index: 2;
-  padding: 10px 20px;
-  border-radius: 12px;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  color: transparent;
+  text-shadow: 
+    0 2px 4px rgba(0, 0, 0, 0.8),
+    0 6px 18px rgba(102, 126, 234, 0.6);
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.8));
 }
 
 .progress-list {
