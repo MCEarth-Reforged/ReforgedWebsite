@@ -22,13 +22,6 @@
             font-weight: 700;
             font-style: normal;
         }
-        /* MinecraftTen — крупные заголовки (h1) */
-        @font-face {
-            font-family: 'MinecraftTen';
-            src: url('assets/fonts/minecraftten.ttf') format('truetype');
-            font-weight: 400;
-            font-style: normal;
-        }
         /* MinecraftSeven — секционные заголовки */
         @font-face {
             font-family: 'MinecraftSeven';
@@ -46,7 +39,7 @@
         /* NotoSansCJK — поддержка CJK символов */
         @font-face {
             font-family: 'NotoSansCJK';
-            src: url('https://sqlylxcnoqehorlgmztm.supabase.co/storage/v1/object/public/icons/fonts/notosanscjk-regular.ttc') format('truetype');
+            src: url('/assets/fonts/notosanscjk-regular.ttc') format('truetype');
             font-weight: 400;
             font-style: normal;
         }
@@ -181,7 +174,7 @@
         }
         /* Для заголовков */
         h1, h2, h3, h4, h5, h6 {
-            font-family: 'MinecraftTen', 'Minecraft', 'NotoSans', sans-serif !important;
+            font-family: 'Minecraft', 'Minecraft', 'NotoSans', sans-serif !important;
             font-feature-settings: "kern" 0, "liga" 0, "calt" 0;
             text-rendering: -webkit-optimize-contrast;
             text-rendering: optimize-contrast;
@@ -409,7 +402,7 @@
             margin-bottom: 10px;
             font-size: 2.5rem;
             margin-top: 60px;
-            font-family: 'MinecraftTen', 'Minecraft', sans-serif;
+            font-family: 'Minecraft', 'Minecraft', sans-serif;
             font-weight: 400;
             text-transform: uppercase;
             letter-spacing: 4px;
@@ -421,7 +414,7 @@
             color: #5a4a3a;
             margin-bottom: 20px;
             font-size: 1.1rem;
-            font-family: 'MinecraftTen', 'Minecraft', sans-serif;
+            font-family: 'Minecraft', 'Minecraft', sans-serif;
             font-weight: 600;
             letter-spacing: 0.5px;
         }
@@ -468,7 +461,7 @@
             margin-bottom: 15px;
             padding-bottom: 10px;
             border-bottom: 4px solid #6b8e23;
-            font-family: 'MinecraftTen', 'Minecraft', sans-serif;
+            font-family: 'Minecraft', 'Minecraft', sans-serif;
             text-transform: uppercase;
             letter-spacing: 2px;
         }
@@ -510,7 +503,7 @@
             font-weight: 700;
             color: #3e2723;
             margin-bottom: 5px;
-            font-family: 'MinecraftTen', 'Minecraft', sans-serif;
+            font-family: 'Minecraft', 'Minecraft', sans-serif;
             word-break: break-word;
             overflow-wrap: break-word;
         }
@@ -860,7 +853,7 @@
                 <span class="theme-icon">🌙</span>
             </button>
         </div>
-        <img src="logo.png" alt="MCEarth: Reforged" style="max-width: 300px; height: auto;">
+        <img src="logo.png" alt="MCEarth: Reforged" style="max-width: 300px; height: auto; display: block; margin: 0 auto;">
         <p class="subtitle">Sustaining Minecraft Earth, beyond the closing</p>
         <div class="nav-tabs-wrapper">
             <div class="nav-tabs">
@@ -970,7 +963,7 @@
                 </h2>
                 <div class="authors">
                     <div class="author-card">
-                        <div class="author-name">VoltacceptYT</div>
+                        <div class="author-name">Voltaccept</div>
                         <div class="author-role">Founder | Developer</div>
                         <div class="author-links">
                             <a href="https://discord.com/users/881533862977609728" class="link" target="_blank">
@@ -1068,7 +1061,7 @@
 
         // Icon helper
         function iconUrl(filename) {
-            return `https://sqlylxcnoqehorlgmztm.supabase.co/storage/v1/object/public/icons/icon/${filename}`;
+            return `/assets/icon/${filename}`;
         }
         function applyMceIcons() {
             document.querySelectorAll('[data-icon]').forEach(el => {
